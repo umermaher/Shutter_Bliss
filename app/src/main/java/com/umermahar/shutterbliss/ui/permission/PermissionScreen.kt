@@ -91,7 +91,8 @@ fun PermissionScreen(
             Column (
                 modifier = Modifier
                     .fillMaxWidth()
-                    .weight(0.45f),
+                    .weight(0.60f)
+                    .padding(30.dp),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -110,7 +111,21 @@ fun PermissionScreen(
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.titleMedium,
                 )
-                Spacer(modifier = Modifier.height(30.dp))
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth(),
+                    text = stringResource(R.string.camera_access_for_capture_msg),
+                    textAlign = TextAlign.Center,
+                )
+            }
+
+            Box (
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(0.40f),
+                contentAlignment = Alignment.TopCenter
+            ) {
                 Button(
                     onClick = {
                         if(!activity.hasPermission(Manifest.permission.CAMERA))
