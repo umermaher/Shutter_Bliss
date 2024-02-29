@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shutter Bliss</string>
+    <string name="no_phots_yet">No photos yet!</string>
+    <string name="add_details_to_contine">Permission Required!</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="permission_already_granted">Permission already granted!</string>
+
+    <string name="permanently_declined_permission_msg">It seems you permanently declined %1$s permission. You can go to app settings to grant it.</string>
+    <string name="camera_access_for_capture_msg">This app needs access to device\'s camera so that you can capture your memories and enjoy with the app features.</string>
+    <string name="permission_required">Permission Required!</string>
+    <string name="okay">Okay</string>
+</resources>
